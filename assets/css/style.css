@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@500;600&display=swap');
+
+:root{
+    --success: rgba(131, 183, 53, 1);
+}
+body {
+    font-family: 'Lato' sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+textarea:hover, 
+input:hover,
+select:hover,
+textarea:active, 
+input:active, 
+select:active,
+textarea:focus, 
+input:focus,
+select:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+#website-woodmart {  }
+
+#header-general{
+    height: 105px;
+    max-height: 105px;
+}
+#header-general > .container > .d-flex {
+    height: 105px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+#header-bottom{
+    font-size: 0.9rem;
+}
+.container{
+    max-width: 1222px;
+}
+
+.dropdown-item:hover{
+    color: var(--success)!important;
+    background-color: transparent!important;
+}
+.top-nav-link:hover{
+    color: rgba(255,255,255,.8)!important;
+}
+.general-nav-link{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+.general-nav-link:hover{
+    color: rgba(0,0,0,.6)!important;
+}
+.nav-text-default:hover{
+    color: var(--success);
+}
+.nav-text-hover{
+    font-weight: 500;
+}
+.nav-text-hover:hover{
+    color: var(--success)!important;
+}
+/* ============ Thema Colors Start============= */
+.bg-theme-1{
+    background-color: var(--success);
+}
+.color-theme-1{
+    color: var(--success);
+}
+/* ============ Thema Colors End============= */
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:4px; }
+	.megamenu-s{ margin-top:6px; }
+	.megamenu-l{ margin-top:6px; }
+}	
+/* ============ desktop view .end// ============ */
+/*
+@media (min-width: 768px) {
+    .animate {
+      animation-duration: 0.3s;
+      -webkit-animation-duration: 0.3s;
+      animation-fill-mode: both;
+      -webkit-animation-fill-mode: both;
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0rem);
+      opacity: 1;
+    }
+  
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes slideIn {
+    0% {
+      -webkit-transform: transform;
+      -webkit-opacity: 0;
+    }
+  
+    100% {
+      -webkit-transform: translateY(0);
+      -webkit-opacity: 1;
+    }
+  
+    0% {
+      -webkit-transform: translateY(1rem);
+      -webkit-opacity: 0;
+    }
+  }
+  
+  .slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+  }*/
+
+  .navbar .megamenu{ padding: 1rem; }
+  .megasubmenu{ padding: 1rem; }
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+  .navbar .has-megamenu{position:static!important;}
+  .megamenu-s{right:12px; width:73%; margin-top:0;  }
+  .megamenu-l{left:0; right:12px; width:calc(100%-12px); margin-top:0;  }
+  
+  .dropdown-menu .dropdown-toggle::after{
+		border-top: .3em solid transparent;
+	    border-right: 0;
+	    border-bottom: .3em solid transparent;
+	    border-left: .3em solid;
+	}
+
+    .megasubmenu{ 
+		left:100%; top:0; min-height: 100%; min-width:500px;
+	}
+
+	.dropdown-menu > li:hover .megasubmenu{
+		display: block;
+	}
+
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ mobile view ============ */
+@media(max-width: 991px){
+  .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+    overflow-y: auto;
+      max-height: 90vh;
+      margin-top:10px;
+  }
+}
